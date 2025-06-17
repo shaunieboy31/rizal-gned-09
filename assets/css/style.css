@@ -11,7 +11,9 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #000000;
+  background: url("../img/backG.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 a {
@@ -520,7 +522,7 @@ section {
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: #000000;
   font-family: "Poppins", sans-serif;
 }
 
@@ -529,7 +531,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #ffde9e;
+  background: #000000;
   margin: 4px 10px;
 }
 
@@ -567,11 +569,24 @@ section {
   font-size: 20px;
   left: 0;
   top: -3px;
-  color: #ffc451;
+  color: #250f00;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+.about .about-img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.about .about-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 /*--------------------------------------------------------------
