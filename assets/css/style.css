@@ -1343,8 +1343,15 @@ section {
 }
 
 .biography .section-title h2 {
-  color: #000000; /* Your palette’s forest green */
+  color: #000000;
 }
+
+.h3font{
+  font-family: poppins, sans-serif;
+  font-weight:bold;
+  text-align: center;
+}
+
 
 .biography img {
   max-height: 400px;
