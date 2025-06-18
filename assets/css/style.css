@@ -784,19 +784,14 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
-  opacity: 0;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
+  top: 0; left: 0; right: 0; bottom: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  background: rgba(0,0,0,0.5);
+  transition: opacity 0.3s;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
@@ -1356,5 +1351,32 @@ section {
 .biography img {
   max-height: 400px;
   object-fit: cover;
-  margin-right:200px;
+  margin-right:100px;
+}
+.portfolio-info {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  background: rgba(0,0,0,0.5);
+  transition: opacity 0.3s;
+}
+
+.portfolio-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio-hover-text {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 2;
 }
