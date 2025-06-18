@@ -1337,3 +1337,17 @@ section {
   font-size: 13px;
   color: #fff;
 }
+.biography {
+
+  padding: 60px 0;
+}
+
+.biography .section-title h2 {
+  color: #000000; /* Your palette’s forest green */
+}
+
+.biography img {
+  max-height: 400px;
+  object-fit: cover;
+  margin-right:100px;
+}
