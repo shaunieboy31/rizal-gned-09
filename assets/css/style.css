@@ -1711,6 +1711,71 @@ section {
     height: 100px;
   }
 }
+
+/*--------------------------------------------------------------
+# INTERVIEW AND OPINIONS SECTION
+--------------------------------------------------------------*/
+
+#interview-opinions {
+  justify-content: center;
+}
+
+.quotes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quote {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px);
+  transition: all 0.3s ease-in-out;
+}
+
+.quote:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.quote p {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.quote p:hover {
+  color: #337ab7;
+}
+
+.quote cite {
+  font-size: 16px;
+  color: #666;
+  transition: color 0.3s ease-in-out;
+}
+
+.quote cite:hover {
+  color: #337ab7;
+}
+
+@media only screen and (max-width: 768px) {
+  .quote {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .quote {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
 .timeline-modal {
   display: none;
   position: fixed;
