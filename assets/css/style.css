@@ -343,7 +343,7 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #e4e2dd;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -1338,8 +1338,15 @@ section {
 }
 
 .biography .section-title h2 {
-  color: #000000; /* Your palette’s forest green */
+  color: #000000;
 }
+
+.h3font{
+  font-family: poppins, sans-serif;
+  font-weight:bold;
+  text-align: center;
+}
+
 
 .biography img {
   max-height: 400px;
@@ -1372,4 +1379,5 @@ section {
   font-weight: bold;
   text-align: center;
   z-index: 2;
+  margin-right:200px;
 }
