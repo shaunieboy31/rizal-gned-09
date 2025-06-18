@@ -292,3 +292,35 @@
   new PureCounter();
 
 })()
+  const modal = document.getElementById('timelineModal');
+  const modalImage = document.getElementById('modalImage');
+  const modalText = document.getElementById('modalText');
+  const closeBtn = document.querySelector('.timeline-close');
+
+  // Customize these summaries for each timeline event in your HTML
+  const details = [
+    "Rizal was born between 11 and 12 at night in Calamba, Laguna, near the scenic Laguna de Bay. He had an unusually large head at birth, which made his delivery difficult. A priest who baptized him said, “Take care of this child he will be great someday.”",
+    "At just 11 years old, Rizal enrolled at Ateneo, where he stood out as a brilliant student. He loved reading and learned Latin, Spanish, and even some French. Despite being younger and smaller than his classmates, he quickly earned top honors and finished with a degree in Bachelor of Arts.",
+    "Rizal began studying medicine at UST to help his mother, who was slowly going blind. But during his stay, he experienced unfair treatment from the Spanish friars. Feeling discriminated against as an indio, he decided to leave the Philippines and continue his studies abroad.",
+    "At the age of 21, Rizal secretly sailed to Spain. There, he enrolled at the Universidad Central de Madrid to continue his studies in medicine and philosophy. This journey was the start of his life as a reformist and writer abroad.",
+    "While in Europe, Rizal published Noli Me Tangere, a novel that shocked both Filipinos and Spaniards. It revealed how the friars abused power, how justice was corrupted, and how ordinary people suffered. Many saw the book as the start of the Philippine nationalist movement.",
+    "During this time, Rizal traveled to France, Germany, Belgium, and other parts of Europe. He continued his writings, worked on scientific studies, and promoted peaceful reform. He also met scholars and reformists who supported the Filipino cause.",
+    "El Filibusterismo showed a darker side of Rizal. It told the story of a man who returned not to reform society but to bring justice through revolution. This novel reflected Rizal’s deep frustration with the lack of change in the Philippines.",
+    "After forming La Liga Filipina to promote peaceful reform, Rizal was arrested and exiled to Dapitan. Even in exile, he stayed productive building a school, practicing as a doctor, teaching kids, improving the town’s water system, and doing scientific research.",
+    " Hoping to help during a disease outbreak in Cuba, Rizal volunteered to serve as a doctor. But before he could leave, he was arrested by Spanish authorities, who accused him of being involved with the Filipino revolutionaries—even though he didn’t support violence.",
+    "Rizal was executed by firing squad in what is now Luneta Park, Manila. He walked calmly to his death, leaving behind a farewell poem, Mi Último Adiós. His execution turned him into a symbol of the Filipino struggle for freedom."
+  ];
+
+  const images = document.querySelectorAll('.timeline-img img');
+
+  images.forEach((img, index) => {
+    img.style.cursor = "pointer";
+    img.addEventListener('click', () => {
+      modal.style.display = 'block';
+      modalImage.src = img.src;
+      modalText.textContent = details[index] || "More info coming soon.";
+    });
+  });
+
+  closeBtn.onclick = () => modal.style.display = 'none';
+  window.onclick = (e) => { if (e.target == modal) modal.style.display = 'none'; };

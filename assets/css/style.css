@@ -1711,3 +1711,54 @@ section {
     height: 100px;
   }
 }
+.timeline-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.timeline-modal-content {
+  background-color: #fffef7;
+  margin: 8% auto;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  animation: fadeIn 0.4s ease;
+  position: relative;
+}
+
+.timeline-modal-content img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.timeline-modal-content #modalText {
+  font-size: 1.1rem;
+  color: #3e2723;
+  line-height: 1.6;
+}
+
+.timeline-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  color: #3e2723;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
