@@ -27,6 +27,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/quiz.css">
 
  
 </head>
@@ -47,6 +48,7 @@
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Works</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Album</a></li>
+          <li><a class="nav-link scrollto " href="#timeline">Timeline</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -605,8 +607,23 @@ He was executed by the Spanish colonial government for the crime of rebellion af
 <!-- ======= End Interview and Opinions Section ======= -->
 
 <!-- ======= Interactive/Quiz Section ======= -->
+ <section id="timeline" class="timeline-section">
+  <div class="container">
+    <div class="quiz-title">
+      <center><h6>SHORT QUIZ</h6></center>
+    </div>
 
-<!-- ======= Interactive/Quiz Section Code Here ======= -->
+<section id="quiz">
+  <script src="assets/js/quiz.js"></script>
+  <div id="quiz-content"></div>
+  <center><button onclick="checkAnswers()" id="checkAnswersButton" disabled>Check Answers</button></center>
+  <div id="results"></div>
+  <div id="popup">
+    <span id="popupClose" onclick="closePopup()">&times;</span>
+    <p id="popupMessage"></p>
+    <div id="correctAnswers"></div>
+  </div>
+</section>
 
 <!-- ======= End Interactive/Quiz Section ======= -->
 

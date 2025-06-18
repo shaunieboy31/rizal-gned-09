@@ -1644,7 +1644,7 @@ section {
   }
 
   .timeline {
-    gap: 40px;
+    gap: 30px;
   }
 
   .timeline::before {
@@ -1739,7 +1739,7 @@ section {
 
 .quote:hover {
   background-color: #f2f2f2;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   transform: translateY(-5px);
 }
 
@@ -1826,4 +1826,14 @@ section {
 @keyframes fadeIn {
   from {opacity: 0; transform: translateY(-20px);}
   to {opacity: 1; transform: translateY(0);}
+}
+
+.quiz-title h6 {
+  font-size: 3.5rem;
+  background: linear-gradient(135deg, #4e342e 0%, #3e2723 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
