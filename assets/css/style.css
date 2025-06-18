@@ -30,9 +30,20 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5{
   font-family: "Raleway", sans-serif;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -1408,7 +1419,7 @@ section {
   z-index: 2;
 }
 
-.timeline-section .section-title h2 {
+.timeline-section .section-title h6 {
   font-size: 3.5rem;
   background: linear-gradient(135deg, #4e342e 0%, #3e2723 100%);
   -webkit-background-clip: text;
