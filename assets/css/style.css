@@ -1396,7 +1396,6 @@ section {
 # Timeline Section (Brown-Yellow-Black Theme)
 --------------------------------------------------------------*/
 .timeline-section {
-  background: linear-gradient(135deg, #f5f0e6 0%, #d7ccc8 100%);
   padding: 80px 0;
   position: relative;
   overflow: hidden;
@@ -1431,7 +1430,7 @@ section {
 
 .timeline-section .section-title p {
   font-size: 1.3rem;
-  color: #4e342e;
+  color: #070504;
   font-weight: 300;
   position: relative;
 }
@@ -1444,7 +1443,7 @@ section {
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background: linear-gradient(135deg, #fbc02d 0%, #ffca28 100%);
+  background: linear-gradient(135deg, #000000 0%, #000000 100%);
   border-radius: 2px;
 }
 
