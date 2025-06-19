@@ -1837,3 +1837,132 @@ section {
   font-weight: 700;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* ======= Base Styling ======= */
+
+
+/* ======= Political Thought Section ======= */
+.political-thought-section {
+  padding: 80px 0;
+  background-image: radial-gradient(circle at top left, rgba(205, 176, 133, 0.1), transparent 60%),
+                    linear-gradient(135deg, rgba(202, 164, 114, 0.05) 25%, transparent 25%),
+                    linear-gradient(225deg, rgba(202, 164, 114, 0.05) 25%, transparent 25%);
+  background-size: cover;
+}
+
+
+
+/* ======= Cards Container ======= */
+.thought-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ======= Individual Card ======= */
+.thought-card {
+  background: #fdf8ef;
+  border: 1px solid #dbc7a0;
+  border-left: 6px solid #a97c50;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(66, 44, 18, 0.12);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.thought-card::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 160%;
+  height: 160%;
+  background: radial-gradient(circle at center, rgba(165, 115, 70, 0.06), transparent 60%);
+  transform: rotate(25deg);
+  z-index: 0;
+}
+
+.thought-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(66, 44, 18, 0.2);
+}
+
+.thought-card h3 {
+  font-size: 1.4rem;
+  color: #4b331c;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.thought-card p,
+.thought-card blockquote {
+  color: #3d2a15;
+  line-height: 1.7;
+  font-size: 1rem;
+  z-index: 1;
+  position: relative;
+}
+
+.thought-card blockquote {
+  margin: 12px 0;
+  padding-left: 18px;
+  border-left: 3px solid #a97c50;
+  font-style: italic;
+  background-color: rgba(252, 247, 238, 0.7);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* ======= Image Frame Placeholder ======= */
+.image-frame {
+  margin-top: 18px;
+  width: 100%;
+  background: #ede1c5;
+  border: 2px dashed #a67c52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+  padding: 8px; /* Optional: adds space around the image */
+  box-sizing: border-box;
+}
+
+.image-frame img {
+  max-width: 100%;
+  height: auto;
+  max-height: 350px; /* Optional: prevents very tall images from being too large */
+  object-fit: contain;
+  border-radius: 4px;
+  display: block;
+}
+
+.image-frame:hover {
+  background-color: #f2e4cb;
+  color: #4b331c;
+}
+
+/* ======= Responsive Enhancements ======= */
+@media (max-width: 480px) {
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .thought-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title h2 {
+    font-size: 1.1rem;
+    padding: 0 2px;
+  }
+}
