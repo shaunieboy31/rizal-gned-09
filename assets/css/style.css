@@ -2027,3 +2027,31 @@ section {
     padding-right: 8px;
   }
 }
+
+.quotes2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  transition: all 0.3s ease-in-out;
+  align-self: center;
+}
+
+/* Individual quote styling */
+.quote {
+  width: 100%;
+  text-align: center;
+}
+
+.quote p {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 10px;
+  transition: color 0.3s ease-in-out;
+}
